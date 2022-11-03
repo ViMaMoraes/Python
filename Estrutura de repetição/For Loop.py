@@ -33,7 +33,7 @@ for letra in palavra:
 # Enviar um email com os detalhes da compra online
 # (maximo 3 tentativas) para compras confirmadas.
 
-compra_confirmada = False
+compra_confirmada = True
 dados_compa = "Compra no valor de R$ 12.50 e entrega confirmada"
 
 for enviar in range(3):
@@ -44,4 +44,14 @@ for enviar in range(3):
 else:
     print("Falha na compra")
 
+# ----------------------------------------------------/
+# ----------------------------------------------------\
+# == for loop nested
+# Outer loop
+#   Inner Loop
+
+for numero1 in range(1, 6):
+    print('Produto ' + str(numero1))
+    for numero2 in range(11):
+        print(numero1, numero2)
 # ----------------------------------------------------/
